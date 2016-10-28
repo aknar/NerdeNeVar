@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+     android:background="@drawable/arka_plan"
+    android:contextClickable="false">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:id="@+id/linearLayout"
+
+        android:layout_marginLeft="25dp"
+        android:gravity="center">
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="42dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txt_ad"
+            android:layout_gravity="center_horizontal"
+            android:hint="Kullanıcı Adı"
+            android:textColor="#f7e412"
+            android:elegantTextHeight="false"
+            android:textColorHint="#f7e412"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="42dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/txt_sifre"
+            android:layout_gravity="center_horizontal"
+            android:hint="Şifre"
+            android:layout_marginTop="10dp"
+            android:textColor="#f7e412"
+            android:textColorHint="#f7e412"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="51dp"
+                android:id="@+id/btn_giris"
+                android:layout_below="@+id/linearLayout"
+                 android:background="@drawable/giris"
+                android:layout_marginTop="15dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="51dp"
+                android:id="@+id/btn_kaydol"
+                android:layout_below="@+id/linearLayout"
+                 android:layout_marginTop="15dp"
+                android:background="@drawable/kaydol" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
